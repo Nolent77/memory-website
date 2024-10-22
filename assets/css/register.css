@@ -10,18 +10,18 @@ body{
 
 .titleConnexion {
     text-align: center; /* on alligne les tire "Inscription" au centre */
-    font-size: 70px; /* on définit la taille du titre en pixel */
+    font-size: 500%; /* on définit la taille du titre en pixel */
     font-family: 'PoliceDesTitres', sans-serif; /* on join la police d'écriture au titre */
 }
-.title {
+.titleInscription {
     text-align: center; /* on alligne les tire "Inscription" au centre */
-    font-size: 70px; /* on définit la taille du titre en pixel */
+    font-size:500%; /* on définit la taille du titre en pixel */
     font-family: 'PoliceDesTitres', sans-serif; /* on join la police d'écriture au titre */
 }
 .regiterBox{
     margin-left: 32%;/*place les touche a 32% de l'écran*/
-    width : 500px;/* modifie la longeur de barres*/
-    padding: 15px;/* modifie la largeur des barres*/
+    width : 35%;/* modifie la longeur de barres*/
+    padding: 1%;/* modifie la largeur des barres*/
 }
 
 button{
@@ -29,7 +29,7 @@ button{
     background-color: #e7af28;
     box-sizing: border-box;
     resize: none;
-    padding: 18px;
+    padding: 1%;
     color : #FFF /* Modifie la couleur du texte qui se trouve dans le boutton*/
 
 
@@ -37,7 +37,7 @@ button{
 }
 
 input{
-    border: 9px solid #0f042e; /*ajoute une bordure (une espace de 9px)*/
+    border: 0.5rem solid #0f042e; /*ajoute une bordure (une espace de 9px)*/
     display: flex; /*utilise le modèle Flexbox pour organiser les éléments enfants de cet élément de manière flexible*/
     flex-direction: column; /*pour placer chaque barre l'une sous l'autre*/
     background-color: #3c3564; /*définit la couleur de fond de chaque barre*/
