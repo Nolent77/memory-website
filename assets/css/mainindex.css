@@ -1,0 +1,95 @@
+
+.Play {
+  background-image: url("/assets/images/FondJeu.png");
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.Play .Bienvenue{
+  font-size: 25px;
+}
+.Play .Lejeu{
+  font-size: 50px;
+  text-align: center;
+}
+.Play .Lejeu a{
+  color: white;
+  text-decoration: none;
+  background-color: orange;
+  margin: 10px;
+  border-radius: 10px;
+}
+.Play .Lefondjeu{
+  font-size: 60px;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.Rules{
+  text-align: center;
+}
+.Rules .rulestitle{
+  background-color: darkslateblue;
+  border-radius: 30px;
+  font-size: 22px;
+}
+.Stats .statstitle{
+  background-color: darkslateblue;
+  border-radius: 30px;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+
+.Stats .statscontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Stats .statscontent .background  {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+}
+.Stats .statscontent .background img{
+  border-radius: 20px;
+  margin: 15px;
+}
+.Stats .statscontent .statistique  {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: blueviolet;
+  font-size: 25px;
+  font-weight: bolder;
+  -webkit-text-stroke: 1px darkslateblue;
+}
+
+.teamtitle{
+  background-color: darkslateblue;
+  border-radius: 30px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.teamcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.name{
+  text-align: center;
+  font-size: 17px;
+}
+.members img{
+  margin: 20px;
+  border-radius: 10px;
+}

@@ -1,0 +1,61 @@
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.card {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card-front,
+.card-back {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.card-back {
+    background-color: #272645;
+    color: white;
+}
+
+.card-front {
+    background-color: white;
+    color: #272645;
+    transform: rotateY(180deg);
+    border: 2px solid #272645;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .card .card-front {
+    transform: rotateY(0deg);
+}
+
+input[type="checkbox"]:checked + .card .card-back {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    transition: transform 0.5s;
+}
