@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.left {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.right a:hover {
+    color: #1abc9c;
+}
+
+.left {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
