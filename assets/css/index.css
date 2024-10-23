@@ -22,12 +22,16 @@
   margin: 10px;
   border-radius: 10px;
 }
+
 .Play .background_play{
   font-size: 60px;
   background-color: orange;
   border-radius: 10px;
+  transition: transform 0.2s;
 }
-
+.Play .background_play:hover{
+  transform: scale(1.1);
+}
 .Rules{
   text-align: center;
 }
