@@ -1,6 +1,6 @@
 footer {
     background-color: #0e0b26;
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
 footer span {
@@ -8,20 +8,20 @@ footer span {
 }
 
 footer ul {
-    list-style-type: disc; /* Utiliser le style de liste de votre choix */
-    padding: 0; /* Supprime le padding par défaut */
+    list-style-type: disc;
+    padding: 0; /
     margin: 0;
 
 }
 
 footer ul li::marker {
-    color: orange; /* Changez cette couleur selon vos besoins */
-    font-size: 26px; /* Ajustez la taille des points si nécessaire */
+    color: orange;
+    font-size: 26px;
 }
 
 .footer-section {
-    display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
-    align-items: center; /* Aligne les éléments verticalement au centre */
+    display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
