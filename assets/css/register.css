@@ -2,6 +2,10 @@ body{
     background-color:#0f042e;
     color : white;
 
+
+}
+main{
+    margin-top: -3px;
 }
 @font-face {
     font-family : 'PoliceDesTitres'; /* nom personnalisé de la police */
@@ -18,25 +22,25 @@ body{
     font-size:500%; /* on définit la taille du titre en pixel */
     font-family: 'PoliceDesTitres', sans-serif; /* on join la police d'écriture au titre */
 }
-.regiterBox{
-    margin-left: 32%;/*place les touche a 32% de l'écran*/
+.registerBox{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width : 35%;/* modifie la longeur de barres*/
     padding: 1%;/* modifie la largeur des barres*/
+    margin: 50px auto;
 }
 
-button{
-    margin-left: 33.5%;
+button.registerBtn {
     background-color: #e7af28;
     box-sizing: border-box;
     resize: none;
     padding: 1%;
     color : #FFF /* Modifie la couleur du texte qui se trouve dans le boutton*/
-
-
-
 }
 
-input{
+.registerBox input{
     border: 0.5rem solid #0f042e; /*ajoute une bordure (une espace de 9px)*/
     display: flex; /*utilise le modèle Flexbox pour organiser les éléments enfants de cet élément de manière flexible*/
     flex-direction: column; /*pour placer chaque barre l'une sous l'autre*/
