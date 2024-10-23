@@ -59,3 +59,16 @@ input[type="checkbox"]:checked + .card .card-back {
 .card-front, .card-back {
     transition: transform 0.5s;
 }
+
+
+
+.memory_card  {
+    width: 99%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
