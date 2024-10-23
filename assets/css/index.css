@@ -1,4 +1,3 @@
-
 .Play {
   background-image: url("/assets/images/FondJeu.png");
   background-size: cover;
@@ -12,18 +11,18 @@
 .Play .Bienvenue{
   font-size: 25px;
 }
-.Play .Lejeu{
+.Play .play_button{
   font-size: 50px;
   text-align: center;
 }
-.Play .Lejeu a{
+.Play .play_button a{
   color: white;
   text-decoration: none;
   background-color: orange;
   margin: 10px;
   border-radius: 10px;
 }
-.Play .Lefondjeu{
+.Play .background_play{
   font-size: 60px;
   background-color: orange;
   border-radius: 10px;
@@ -32,12 +31,12 @@
 .Rules{
   text-align: center;
 }
-.Rules .rulestitle{
+.Rules .rules_title{
   background-color: darkslateblue;
   border-radius: 30px;
   font-size: 22px;
 }
-.Stats .statstitle{
+.Stats .stats_title{
   background-color: darkslateblue;
   border-radius: 30px;
   font-size: 22px;
@@ -46,22 +45,22 @@
 
 
 
-.Stats .statscontent {
+.Stats .stats_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.Stats .statscontent .background  {
+.Stats .stats_content .background  {
   position: relative;
   text-align: center;
   border-radius: 10px;
 }
-.Stats .statscontent .background img{
+.Stats .stats_content .background img{
   border-radius: 20px;
   margin: 15px;
 }
-.Stats .statscontent .statistique  {
+.Stats .stats_content .statistique  {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,14 +71,14 @@
   -webkit-text-stroke: 1px darkslateblue;
 }
 
-.teamtitle{
+.team_title{
   background-color: darkslateblue;
   border-radius: 30px;
   font-size: 22px;
   text-align: center;
 }
 
-.teamcontent {
+.team_content {
   display: flex;
   flex-direction: row;
   justify-content: center;
