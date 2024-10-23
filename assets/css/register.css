@@ -3,10 +3,6 @@ body{
     color : white;
 
 }
-@font-face {
-    font-family : 'PoliceDesTitres'; /* nom personnalisé de la police */
-    src : url('../fonts/POSTERABLE.ttf') format('truetype'); /* on donne le chemin pour la police d'écriture */
-}
 
 .titleConnexion {
     text-align: center; /* on alligne les tire "Inscription" au centre */
@@ -45,4 +41,10 @@ input{
     padding: 4%; /*ajoute un espace à l'interieur des barres (autour du contenu donc le texte de la barre et la bordure de la barre*/
     color: #888;/* Modifie la couleur du texte qui se trouve dans les barres*/
 
+}
+
+@media screen and(max-width: 767px) {
+    button {
+
+    }
 }
