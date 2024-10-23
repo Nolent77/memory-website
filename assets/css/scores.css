@@ -1,0 +1,50 @@
+body {
+    background-color: #0f0e2e;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Tab td, th {
+    border: 2px solid darkslateblue;
+}
+.Tab table {
+    border: 2px solid white;
+    margin: auto;
+}
+.Tab td, th {
+    padding: 10px;
+    text-align: left;
+    font-size: 17px;
+}
+.Tab .below_three{
+    background-color: slateblue;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Tab .Columns th {
+    background-color: darkslateblue;
+    padding-right: 100px;
+}
+
+.Tab .Columns .Classement {
+    padding-right: 10px;
+}
+
+.Tab .First{
+    background-color: goldenrod;
+    text-align: center;
+    font-size: 20px;
+}
+.Tab .Second{
+    background-color: silver;
+    text-align: center;
+    font-size: 20px;
+}
+.Tab .Third{
+    background-color: sienna;
+    text-align: center;
+    font-size: 20px;
+}
