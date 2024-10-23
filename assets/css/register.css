@@ -2,14 +2,6 @@ body{
     background-color:#0f042e;
     color : white;
 
-
-}
-main{
-    margin-top: -3px;
-}
-@font-face {
-    font-family : 'PoliceDesTitres'; /* nom personnalisé de la police */
-    src : url('../fonts/POSTERABLE.ttf') format('truetype'); /* on donne le chemin pour la police d'écriture */
 }
 
 .titleConnexion {
@@ -22,25 +14,25 @@ main{
     font-size:500%; /* on définit la taille du titre en pixel */
     font-family: 'PoliceDesTitres', sans-serif; /* on join la police d'écriture au titre */
 }
-.registerBox{
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.regiterBox{
+    margin-left: 32%;/*place les touche a 32% de l'écran*/
     width : 35%;/* modifie la longeur de barres*/
     padding: 1%;/* modifie la largeur des barres*/
-    margin: 50px auto;
 }
 
-button.registerBtn {
+button{
+    margin-left: 33.5%;
     background-color: #e7af28;
     box-sizing: border-box;
     resize: none;
     padding: 1%;
     color : #FFF /* Modifie la couleur du texte qui se trouve dans le boutton*/
+
+
+
 }
 
-.registerBox input{
+input{
     border: 0.5rem solid #0f042e; /*ajoute une bordure (une espace de 9px)*/
     display: flex; /*utilise le modèle Flexbox pour organiser les éléments enfants de cet élément de manière flexible*/
     flex-direction: column; /*pour placer chaque barre l'une sous l'autre*/
@@ -49,4 +41,10 @@ button.registerBtn {
     padding: 4%; /*ajoute un espace à l'interieur des barres (autour du contenu donc le texte de la barre et la bordure de la barre*/
     color: #888;/* Modifie la couleur du texte qui se trouve dans les barres*/
 
+}
+
+@media screen and(max-width: 767px) {
+    button {
+
+    }
 }
