@@ -65,7 +65,7 @@
     margin-left: 15%;
 }
 
-button {
+.contact_box button {
     background-color: #ec9224;
     color: white;
     font-weight: bold;
@@ -75,7 +75,7 @@ button {
     float: right;
 }
 
-button:hover {
+.contact_box button:hover {
     background-color: #5c5a8c;
     transform: scale(1.05);
 }
