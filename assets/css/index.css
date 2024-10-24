@@ -174,18 +174,50 @@
 }
 .members{
   margin: 20px;
-  background-color: #0f0e2e;
+  background-color: #0e0b26;
   padding: 25px;
   width: 60%;
   max-width: 300px;
   border-radius: 1px;
   justify-items: center;
   min-width: 100px;
-  min-height: 210px;
+  height: 210px;
 }
 
-@media screen and(max-width: 767px){
-  header{
-    font-size: 8px;
+@media screen and (max-width: 767px){
+  .Rules .Rules_ps{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Rules .Rules_ps .rules_nb{
+    text-align: left;
+    margin-left: 10px;
+  }
+  .Rules .Rules_ps .rules_p{
+    margin: 0 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 90vw;
+    max-width: 767px;
+  }
+  .Rules .Image_ex{
+    height: 180px;
+    width: 180px;
+    margin-top: 10px;
+    border: 1px solid white;
+  }
+  .Rules .Image_mem{
+    height: 180px;
+    width: 90px;
+    object-fit: cover;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .Rules .Image_trophee{
+    height: 180px;
+    width: 90px;
+    object-fit: cover;
   }
 }
