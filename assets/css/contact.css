@@ -35,7 +35,7 @@
 .input_message {
     border: 1px solid #272645;
     background-color: #272645;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     width: 100%;
     padding: 10px;
@@ -78,7 +78,8 @@
 }
 
 .contact_box button:hover {
-    background-color: #5c5a8c;
+    background-color: #514e8c;
     transform: scale(1.05);
 }
+
 
