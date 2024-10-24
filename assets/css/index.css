@@ -1,7 +1,7 @@
 .Play {
   background-image: url("/assets/images/header.png");
   background-size: cover;
-  height: 700px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -32,6 +32,7 @@
   transition: transform 0.2s;
   margin :auto;
   width:60%;
+  border: solid 5px darkorange;
 
 }
 .Play .background_play:hover{
@@ -41,19 +42,27 @@
 .Rules{
   text-align: center;
 }
+.Rules .rulesp{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .Rules .rules_title{
   background-color: darkslateblue;
   border-radius: 30px;
   font-size: 22px;
+  margin: 10px;
+  padding-top: 3px;
 }
 .Rules .Imageex{
   border-radius: 10px;
+  margin-top: 10px;
 }
 .Stats .stats_title{
   background-color: darkslateblue;
   border-radius: 30px;
   font-size: 22px;
   text-align: center;
+  margin: 10px;
 }
 
 
@@ -72,6 +81,7 @@
 .Stats .stats_content .background img{
   border-radius: 20px;
   margin: 15px;
+  border: 3px solid blueviolet;
 }
 .Stats .stats_content .statistique  {
   position: absolute;
@@ -89,6 +99,8 @@
   border-radius: 30px;
   font-size: 22px;
   text-align: center;
+  margin: 10px;
+  padding-top: 3px;
 }
 
 .team_content {
@@ -99,13 +111,16 @@
 }
 .name{
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
+  text-decoration: underline orange;
 }
 .members img{
-  margin: 20px;
+  border: 3px solid orange;
   border-radius: 10px;
 }
-
+.members{
+  margin: 20px;
+}
 
 @media screen and(max-width: 767px){
   header{
