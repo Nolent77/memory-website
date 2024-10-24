@@ -8,6 +8,7 @@
   justify-content: center;
   align-content: center;
 }
+
 .Play .Bienvenue{
   padding: 10px;
   font-size: 25px;
@@ -15,7 +16,13 @@
 }
 .Play .play_button{
   font-size: 50px;
-  text-align: center;
+  text-align: center;background-color: orange;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  margin :auto;
+  width:60%;
+  border: solid 5px darkorange;
+
 }
 .Play .play_button a{
   color: #f4eeee;
@@ -26,17 +33,7 @@
 
 }
 
-.Play .background_play{
-  font-size: 60px;
-  background-color: orange;
-  border-radius: 10px;
-  transition: transform 0.2s;
-  margin :auto;
-  width:60%;
-  border: solid 5px darkorange;
-
-}
-.Play .background_play:hover{
+.Play .play_button:hover{
   transform: scale(1.1);
   background-color: darkorange;
 }
