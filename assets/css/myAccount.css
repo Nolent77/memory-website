@@ -51,13 +51,21 @@
 .userAccount .actionBtn .buttonMotDePasse {
     width: 100px;
     height: 50px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: #ffffff;
-    background-image: repeating-linear-gradient(45deg, rgb(231, 175, 40), #fdcb58)
+    background-image: repeating-linear-gradient(45deg,  rgb(231, 175, 40), #fdcb58)
 }
 
 .userAccount .actionBtn .buttonMail {
     width: 100px;
     height: 50px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     color: #ffffff;
     background-image: repeating-linear-gradient(45deg,  rgb(231, 175, 40), #fdcb58)
 }
