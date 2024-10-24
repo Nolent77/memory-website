@@ -18,10 +18,11 @@
   text-align: center;
 }
 .Play .play_button a{
-  color: white;
+  color: #f4eeee;
   text-decoration: none;
   margin: 10px;
   border-radius: 10px;
+
 }
 
 .Play .background_play{
@@ -29,6 +30,9 @@
   background-color: orange;
   border-radius: 10px;
   transition: transform 0.2s;
+  margin :auto;
+  width:60%;
+
 }
 .Play .background_play:hover{
   transform: scale(1.1);

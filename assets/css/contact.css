@@ -63,6 +63,7 @@
     padding: 20px;
     box-sizing: border-box;
     margin-left: 15%;
+    margin-bottom: 30px;
 }
 
 .contact_box button {
@@ -73,6 +74,7 @@
     padding: 10px 20px;
     cursor: pointer;
     float: right;
+
 }
 
 .contact_box button:hover {
