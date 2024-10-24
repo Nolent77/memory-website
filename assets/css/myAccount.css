@@ -1,7 +1,7 @@
 .userAccount {
     display: flex;
     flex-direction: column;
-    background: repeating-linear-gradient(45deg, black, transparent 100px);
+
     padding-bottom: 100px;
 }
 
@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 30px auto;
 }
 
 .userAccount .infoPlayerBox figure {
@@ -19,12 +20,17 @@
     height: 80px;
     border-radius :40px 50px 40px 50px; /*    Haut-gauche, Haut-droit, Bas-droit, Bas-gauche   rend l'image ciculaire*/
     border : 0.125rem solid #ffffff; /* Bordure de l'image en gris */
+    margin: auto;
+
 
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
+.userAccount .infoPlayerBox .boxOfProfil {
+    margin : 20px auto;
+}
 
 .userAccount .infoPlayerBox img {
     width: 50%;
@@ -32,20 +38,26 @@
 }
 
 .userAccount .infoPlayerBox p {
-    margin: 4px 0;
+    margin: 4px 10px;
+
 }
 
 .userAccount .actionBtn {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 50px;
 }
 
-.userAccount .actionBtn .buttonChat {
-    background-image: repeating-linear-gradient(45deg, rgb(72, 143, 30), #8bea75)
+.userAccount .actionBtn .buttonMotDePasse {
+    width: 100px;
+    height: 50px;
+    color: #ffffff;
+    background-image: repeating-linear-gradient(45deg, rgb(231, 175, 40), #fdcb58)
 }
 
-.userAccount .actionBtn .buttonScore {
-    background-image: repeating-linear-gradient(45deg, rgb(190, 18, 18) , #f36c6c)
+.userAccount .actionBtn .buttonMail {
+    width: 100px;
+    height: 50px;
+    color: #ffffff;
+    background-image: repeating-linear-gradient(45deg,  rgb(231, 175, 40), #fdcb58)
 }
