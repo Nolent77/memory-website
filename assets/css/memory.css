@@ -73,7 +73,10 @@ input[type="checkbox"]:checked + .card .card-back {
 
 }
 
-
+.theme_icon {
+    width: 5%;
+    height: auto;
+}
 
 
 
