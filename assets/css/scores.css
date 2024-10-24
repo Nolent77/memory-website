@@ -42,7 +42,9 @@
     background-color: darkslateblue;
     padding-right: 3vw;
 }
-
+.Tab td {
+    background-color: #0f0e2e;
+}
 .Tab .Columns .Classement {
     padding-right: 10px;
 }
