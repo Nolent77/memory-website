@@ -108,7 +108,11 @@
   flex-direction: row;
   justify-content: center;
 }
-
+.Stats .stats-lr{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .Stats .stats_content .background  {
   position: relative;
   text-align: center;
@@ -219,5 +223,13 @@
     height: 180px;
     width: 90px;
     object-fit: cover;
+  }
+  .Stats .stats_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Stats .stats_content .grosse_img{
+    text-align: center;
   }
 }
