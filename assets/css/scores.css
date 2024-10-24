@@ -1,3 +1,6 @@
+body{
+    background: repeating-linear-gradient(45deg, black, transparent 100px);
+}
 .header_image_container_scores {
     display: flex;
     align-items: center;
@@ -42,7 +45,9 @@
     background-color: darkslateblue;
     padding-right: 3vw;
 }
-
+.Tab td {
+    background-color: #0f0e2e;
+}
 .Tab .Columns .Classement {
     padding-right: 10px;
 }

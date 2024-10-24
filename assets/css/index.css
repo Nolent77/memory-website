@@ -22,6 +22,7 @@
   text-decoration: none;
   margin: 10px;
   border-radius: 10px;
+  font-weight: bold;
 
 }
 
@@ -42,27 +43,62 @@
 .Rules{
   text-align: center;
 }
-.Rules .rulesp{
-  margin-left: 10px;
-  margin-right: 10px;
+.Rules .Rules_ps{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Rules .Rules_ps .rules_nb{
+  font: 30px "Roboto", Impact;
+  color: darkslateblue;
+}
+.Rules .Rules_ps .rules_p{
+  margin: 0 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 20vw;
+  max-width: 265px;
+}
+.Rules .Rules_ps .rules_p h6{
+  color: darkslateblue;
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+.Rules .Rules_ps .rules_p p{
+  font-size: 14px;
 }
 .Rules .rules_title{
   background-color: darkslateblue;
   border-radius: 30px;
   font-size: 22px;
-  margin: 10px;
   padding-top: 3px;
+  width: 60%;
+  margin: 10px auto;
 }
-.Rules .Imageex{
-  border-radius: 10px;
+.Rules .rules_img{
+  margin-bottom: 10px;
+}
+.Rules .Image_ex{
   margin-top: 10px;
+  border: 1px solid white;
+}
+.Rules .Image_mem{
+  object-fit: cover;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Rules .Image_trophee{
+  object-fit: cover;
 }
 .Stats .stats_title{
   background-color: darkslateblue;
   border-radius: 30px;
   font-size: 22px;
   text-align: center;
-  margin: 10px;
+  width: 60%;
+  margin: 10px auto;
 }
 
 
@@ -78,10 +114,15 @@
   text-align: center;
   border-radius: 10px;
 }
+.Stats .stats_content .grosse_img img{
+  border-radius: 10px;
+  margin: 7px;
+  border: 3px solid darkslateblue;
+}
 .Stats .stats_content .background img{
-  border-radius: 20px;
-  margin: 15px;
-  border: 3px solid blueviolet;
+  border-radius: 10px;
+  margin: 7px;
+  border: 3px solid darkslateblue;
 }
 .Stats .stats_content .statistique  {
   position: absolute;
@@ -97,9 +138,10 @@
 .team_title{
   background-color: darkslateblue;
   border-radius: 30px;
+  width: 60%;
+  margin: 10px auto;
   font-size: 22px;
   text-align: center;
-  margin: 10px;
   padding-top: 3px;
 }
 
@@ -110,16 +152,36 @@
 
 }
 .name{
+  font-size: 20px;
+  /*text-decoration: underline white;*/
+  margin: 5px;
   text-align: center;
-  font-size: 16px;
-  text-decoration: underline orange;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.work{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  color: slategray;
 }
 .members img{
-  border: 3px solid orange;
-  border-radius: 10px;
+  align-items: center;
+  /*border: 1px solid white;*/
+  border-radius: 50%;
 }
 .members{
   margin: 20px;
+  background-color: #0f0e2e;
+  padding: 25px;
+  width: 60%;
+  max-width: 300px;
+  border-radius: 1px;
+  justify-items: center;
+  min-width: 100px;
+  min-height: 210px;
 }
 
 @media screen and(max-width: 767px){
