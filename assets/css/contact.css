@@ -14,6 +14,8 @@
 .black_square img {
     display: block;
     margin: 0 auto;
+    height: 50%;
+    width: auto;
 }
 
 .black_square span {
