@@ -6,6 +6,14 @@
     margin-top: 20px;
 }
 
+.memory-grid_difficult {
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 
 .card {
     width: 100px;
