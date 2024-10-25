@@ -58,3 +58,14 @@
     color: white;
     text-decoration: none;
 }
+
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .menu_right {
+        display: none;
+    }
+}
