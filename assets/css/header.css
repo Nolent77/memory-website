@@ -64,8 +64,16 @@ details > summary::-webkit-details-marker {
     display: none;
 }
 
+.menu_hamburger {
+    display: none;
+}
+
 @media screen and (max-width: 1200px){
     .menu_right {
         display: none;
+    }
+    .menu_hamburger {
+        display: flex;
+
     }
 }
