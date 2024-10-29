@@ -1,3 +1,10 @@
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+
+
+
+
 .black_square {
     width: clamp(20px, 40vw, 200px);
     height: clamp(20px, 40vw, 200px);

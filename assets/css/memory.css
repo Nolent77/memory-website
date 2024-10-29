@@ -1,3 +1,9 @@
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+@import 'chat_box.css';
+
+
 .memory-grid {
     display: grid;
     grid-template-columns: repeat(4, 100px);

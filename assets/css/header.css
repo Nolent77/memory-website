@@ -64,8 +64,32 @@ details > summary::-webkit-details-marker {
     display: none;
 }
 
+.menu_hamburger {
+    display: none;
+}
+
+
+
+
 @media screen and (max-width: 1200px){
     .menu_right {
         display: none;
+    }
+    .menu_hamburger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: #0f0e2e;
+        flex-direction: column;
+
+    }
+
+    .menu_right_hamburger ul {
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: #0f0e2e;
+        flex-direction: column;
     }
 }

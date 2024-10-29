@@ -1,3 +1,7 @@
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+
 .Play {
   background-image: url("/assets/images/header.png");
   background-size: cover;
