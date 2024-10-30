@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : mer. 30 oct. 2024 à 15:13
+-- Généré le : mer. 30 oct. 2024 à 16:22
 -- Version du serveur : 5.7.24
 -- Version de PHP : 8.3.1
 
@@ -18,16 +18,46 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `web_memory_story_17`
+-- Base de données : `test3`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `jeu`
+-- Structure de la table `game`
 --
--- Erreur de lecture de structure pour la table web_memory_story_17.jeu : #1146 - La table &#039;web_memory_story_17.jeu&#039; n&#039;existe pas
--- Erreur de lecture des données pour la table web_memory_story_17.jeu : #1064 - Erreur de syntaxe près de &#039;FROM `web_memory_story_17`.`jeu`&#039; à la ligne 1
+
+CREATE TABLE `game` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `game`
+--
+
+INSERT INTO `game` (`id`, `name`) VALUES
+(1, 'Power Of Memory');
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `game`
+--
+ALTER TABLE `game`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `game`
+--
+ALTER TABLE `game`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
