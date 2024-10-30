@@ -3,7 +3,7 @@
 @import 'footer.css';
 
 .Play {
-  background-image: url("/assets/images/header.png");
+  background-image: url("assets/images/header.png");
   background-size: cover;
   height: 600px;
   display: flex;
