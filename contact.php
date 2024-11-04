@@ -2,33 +2,52 @@
 <html lang="fr">
 
 <?php
-    $css_file = 'contact.css';
-    include 'partials/head.php';
-?>
+    session_start();
+    require 'utils/database.php';
 
-<?php
-    require_once 'utils/database.php';
-
-try {
     $pdo = connectToDbAndGetPdo();
 
-    // Remplacez 'user' par le nom de votre table si nécessaire
-    $tableName = 'user';
+    $_SESSION['username'] = 'UserOne';
+    $_SESSION['email'] = 'user1@example.com';
 
-    // Requête pour vérifier si la table existe
-    $query = $pdo->query("SHOW TABLES LIKE '$tableName'");
-    $exists = $query->rowCount() > 0;
+    // email
+$css_file = 'contact.css';
+    require 'partials/head.php';
 
-    if ($exists) {
-        echo "La table '$tableName' existe.";
-    } else {
-        echo "La table '$tableName' n'existe pas.";
+    $to      = 'ryver.co@gmail.com';
+    $subject = 'le sujet';
+    $message = 'Bonjour !';
+    $headers = 'From: river.officiel@gmail.com' . "\r\n" .
+        'Reply-To: ryver.co@gmail.com' . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+
+    mail($to, $subject, $message, $headers);
+
+    ?>
+
+    <?php
+
+
+    try {
+        $pdo = connectToDbAndGetPdo();
+
+        // Remplacez 'user' par le nom de votre table si nécessaire
+        $tableName = 'user';
+
+        // Requête pour vérifier si la table existe
+        $query = $pdo->query("SHOW TABLES LIKE '$tableName'");
+        $exists = $query->rowCount() > 0;
+
+        if ($exists) {
+            echo "La table '$tableName' existe.";
+        } else {
+            echo "La table '$tableName' n'existe pas.";
+        }
+
+    } catch (PDOException $e) {
+        echo "Erreur : " . $e->getMessage();
     }
-
-} catch (PDOException $e) {
-    echo "Erreur : " . $e->getMessage();
-}
-?>
+    ?>
 
 
 
@@ -57,14 +76,18 @@ try {
             </div>
         </div>
 
+
+
         <div class="contact_box">
-            <div class="list2">
-                <input class="input" placeholder="Nom"></input>
-                <input class="input" placeholder="Email"></input>
-            </div>
-            <input class="input" placeholder="Sujet"></input>
-            <textarea class="input_message" placeholder="Message"></textarea>
-            <button>Envoyer</button>
+            <form method="POST" action="">
+                <div class="list2">
+                    <input class="input" type="text" name="nom" placeholder="Nom" required>
+                    <input class="input" type="email" name="email" placeholder="Email" required>
+                </div>
+                <input class="input" type="text" name="sujet" placeholder="Sujet" required>
+                <textarea class="input_message" name="message" placeholder="Message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </div>
 
 

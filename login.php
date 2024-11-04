@@ -2,8 +2,13 @@
 <html class="no-js" lang="fr">
 
 <?php
-$css_file = 'register.css';
-include 'partials/head.php';
+    session_start();
+    require 'utils/database.php';
+    $pdo = connectToDbAndGetPdo();
+
+
+    $css_file = 'register.css';
+    include 'partials/head.php';
 ?>
 
 <body>
