@@ -132,9 +132,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: blueviolet;
-  font-size: 25px;
+  color: white;
+  font-size: 50px;
   font-weight: bolder;
+  -webkit-text-stroke: 2px darkslateblue;
+}
+.Stats .stats_content .statistique p {
+  font-size: 25px;
+  color: white;
   -webkit-text-stroke: 1px darkslateblue;
 }
 
