@@ -93,3 +93,10 @@ details > summary::-webkit-details-marker {
         flex-direction: column;
     }
 }
+
+.menu_right li.active a div {
+
+    color: #3498db;  /* Ajustez cette couleur pour correspondre à votre style */
+
+
+}

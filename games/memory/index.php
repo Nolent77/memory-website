@@ -1,39 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Memory</title>
-  <link rel="stylesheet" href="assets/css/memory.css">
-</head>
-<body>
-  <header>
-    <div class="menu">
-      <div class="menu_title"><div>Power Of Memory</div></div>
-      <ul class="menu_right">
-        <li><a href="index.html"><div>Accueil</div></a></li>
-        <li><a href="memory.html"><div>Jouer</div></a></li>
-        <li><a href="scores.html"><div>Scores</div></a></li>
-        <li class="has_sous_nav">
-          <a href="#"><div>Utilisateur</div></a>
-          <ul class="under_menu">
-            <li><a href="myAccount.html"><div>Mon espace</div></a></li>
-            <li><a href="login.html"><div>Connexion</div></a></li>
-            <li><a href="register.html"><div>Inscription</div></a></li>
-          </ul>
-        </li>
-        <li><a href="contact.html"><div>Contact</div></a></li>
-      </ul>
-    </div>
-  </header>
-  <div class="header_image_container"><img src="assets/images/header.png" alt="paysage" class="header_image">
 
-  <div class="overlay-text">MEMORY</div></div>
+<?php
+    $css_file = 'memory.css';
+    include '../../partials/head.php';
+?>
+
+<body>
+    <?php include '../../partials/header.php'; ?>
+
+  <div class="header_image_container">
+      <img src="../../assets/images/header.png" alt="paysage" class="header_image">
+      <div class="overlay-text">MEMORY</div>
+  </div>
+
   <main>
 
 
 
     <details open>
-      <summary><img src="assets/images/playstation-brands-solid.svg" alt="playstation" class="theme_icon"></summary>
+      <summary><img src="../../assets/images/playstation-brands-solid.svg" alt="playstation" class="theme_icon"></summary>
       <details open>
         <summary>Facile</summary>
         <div class="memory-grid">
@@ -41,7 +27,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -50,7 +36,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -59,7 +45,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -68,7 +54,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -77,7 +63,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -86,7 +72,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -95,7 +81,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -104,7 +90,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -113,7 +99,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -122,7 +108,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -131,7 +117,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -140,7 +126,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -149,7 +135,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -158,7 +144,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -167,7 +153,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -176,7 +162,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -191,7 +177,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -200,7 +186,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -209,7 +195,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -218,7 +204,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -227,7 +213,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -236,7 +222,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -245,7 +231,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -254,7 +240,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -263,7 +249,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -272,7 +258,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -281,7 +267,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -290,7 +276,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -299,7 +285,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -308,7 +294,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -317,7 +303,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -326,7 +312,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -335,7 +321,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -344,7 +330,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -353,7 +339,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -362,7 +348,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -371,7 +357,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -380,7 +366,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -389,7 +375,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -398,7 +384,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -407,7 +393,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -416,7 +402,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -425,7 +411,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -434,7 +420,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -443,7 +429,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -452,7 +438,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -461,7 +447,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -470,7 +456,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -479,7 +465,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -488,7 +474,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -497,7 +483,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -506,7 +492,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -515,7 +501,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -524,7 +510,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -533,7 +519,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -542,7 +528,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -551,7 +537,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -560,7 +546,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -569,7 +555,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -578,7 +564,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -587,7 +573,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -596,7 +582,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -605,7 +591,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -614,7 +600,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -623,7 +609,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -632,7 +618,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -641,7 +627,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -650,7 +636,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -659,7 +645,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -668,7 +654,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -677,7 +663,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -686,7 +672,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -695,7 +681,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -704,7 +690,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -713,7 +699,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -722,7 +708,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -731,7 +717,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cross.png" alt="cross" class="memory_card">
+                <img src="../../assets/images/button_cross.png" alt="cross" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -740,7 +726,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_square.png" alt="square" class="memory_card">
+                <img src="../../assets/images/button_square.png" alt="square" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -749,7 +735,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_cercle.png" alt="cercle" class="memory_card">
+                <img src="../../assets/images/button_cercle.png" alt="cercle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -758,7 +744,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/button_triangle.png" alt="triangle" class="memory_card">
+                <img src="../../assets/images/button_triangle.png" alt="triangle" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -775,7 +761,7 @@
 
     </details>
     <details >
-      <summary><img src="assets/images/xbox-brands-solid%20(1).svg" alt="Xbox" class="theme_icon"></summary>
+      <summary><img src="../../assets/images/xbox-brands-solid%20(1).svg" alt="Xbox" class="theme_icon"></summary>
       <details open>
         <summary>Facile</summary>
         <div class="memory-grid">
@@ -783,7 +769,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -792,7 +778,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -801,7 +787,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -810,7 +796,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -819,7 +805,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -828,7 +814,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -837,7 +823,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -846,7 +832,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -855,7 +841,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -864,7 +850,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -873,7 +859,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -882,7 +868,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -891,7 +877,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -900,7 +886,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -909,7 +895,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -918,7 +904,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -932,7 +918,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -941,7 +927,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -950,7 +936,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -959,7 +945,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -968,7 +954,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -977,7 +963,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -986,7 +972,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -995,7 +981,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1004,7 +990,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1013,7 +999,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1022,7 +1008,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1031,7 +1017,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1040,7 +1026,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1049,7 +1035,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1058,7 +1044,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1067,7 +1053,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1076,7 +1062,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1085,7 +1071,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1094,7 +1080,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1103,7 +1089,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1112,7 +1098,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1121,7 +1107,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1130,7 +1116,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1139,7 +1125,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1148,7 +1134,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1157,7 +1143,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1166,7 +1152,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1175,7 +1161,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1184,7 +1170,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1193,7 +1179,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1202,7 +1188,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1211,7 +1197,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1220,7 +1206,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1229,7 +1215,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1238,7 +1224,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1247,7 +1233,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1256,7 +1242,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1265,7 +1251,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1274,7 +1260,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1283,7 +1269,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1292,7 +1278,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1301,7 +1287,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1310,7 +1296,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1319,7 +1305,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1328,7 +1314,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1337,7 +1323,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1346,7 +1332,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1355,7 +1341,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1364,7 +1350,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1373,7 +1359,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1382,7 +1368,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1391,7 +1377,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1400,7 +1386,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1409,7 +1395,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1418,7 +1404,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1427,7 +1413,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1436,7 +1422,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1445,7 +1431,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1454,7 +1440,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1463,7 +1449,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1472,7 +1458,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
+                <img src="../../assets/images/xbox_a.png" alt="xbox button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1481,7 +1467,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
+                <img src="../../assets/images/xbox_b.png" alt="xbox button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1490,7 +1476,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
+                <img src="../../assets/images/xbox_x.png" alt="xbox button x" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1499,7 +1485,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
+                <img src="../../assets/images/xbox_y.png" alt="xbox button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1513,7 +1499,7 @@
       </details>
     </details>
     <details >
-      <summary><img src="assets/images/nintendo-2.svg" alt="Xbox" class="theme_icon"></summary>
+      <summary><img src="../../assets/images/nintendo-2.svg" alt="Xbox" class="theme_icon"></summary>
       <details open>
         <summary>Facile</summary>
         <div class="memory-grid">
@@ -1521,7 +1507,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1530,7 +1516,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1539,7 +1525,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1548,7 +1534,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1557,7 +1543,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1566,7 +1552,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1575,7 +1561,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1584,7 +1570,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1593,7 +1579,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1602,7 +1588,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1611,7 +1597,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1620,7 +1606,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1629,7 +1615,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1638,7 +1624,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1647,7 +1633,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1656,7 +1642,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1672,7 +1658,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1681,7 +1667,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1690,7 +1676,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1699,7 +1685,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1708,7 +1694,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1717,7 +1703,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1726,7 +1712,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1735,7 +1721,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1744,7 +1730,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1753,7 +1739,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1762,7 +1748,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1771,7 +1757,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1780,7 +1766,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1789,7 +1775,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1798,7 +1784,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1807,7 +1793,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1816,7 +1802,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1825,7 +1811,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1834,7 +1820,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1843,7 +1829,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1852,7 +1838,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1861,7 +1847,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1870,7 +1856,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1879,7 +1865,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1888,7 +1874,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1897,7 +1883,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1906,7 +1892,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1915,7 +1901,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1924,7 +1910,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1933,7 +1919,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1942,7 +1928,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1951,7 +1937,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1960,7 +1946,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1969,7 +1955,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1978,7 +1964,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1987,7 +1973,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -1996,7 +1982,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2005,7 +1991,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2014,7 +2000,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2023,7 +2009,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2032,7 +2018,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2041,7 +2027,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2050,7 +2036,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2059,7 +2045,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2068,7 +2054,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2077,7 +2063,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2086,7 +2072,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2095,7 +2081,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2104,7 +2090,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2113,7 +2099,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2122,7 +2108,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2131,7 +2117,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2140,7 +2126,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2149,7 +2135,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2158,7 +2144,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2167,7 +2153,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2176,7 +2162,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2185,7 +2171,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2194,7 +2180,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2203,7 +2189,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2212,7 +2198,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
+                <img src="../../assets/images/nintendo_b.png" alt="nintendo button b" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2221,7 +2207,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
+                <img src="../../assets/images/nintendo_c.png" alt="nintendo button c" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2230,7 +2216,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
+                <img src="../../assets/images/nintendo_a.png" alt="nintendo button a" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2239,7 +2225,7 @@
             <input type="checkbox">
             <div class="card">
               <div class="card-front">
-                <img src="assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
+                <img src="../../assets/images/nintendo_y.png" alt="nintendo button y" class="memory_card">
               </div>
               <div class="card-back">?</div>
             </div>
@@ -2278,31 +2264,7 @@
 
   </main>
 
-  <footer>
-    <div class="list">
-      <div>
-        <p><bold>Information</bold></p>
-        <p><span>Téléphone : </span>07 83 70 28 44</p>
-        <p><span>Email : </span>support@powerofmemory.fr</p>
-        <p><span>Location : </span>Cergy</p>
-      </div>
 
-
-
-      <div class="footer-section">
-        <div class="ul_fix_marge"><p>Power Of Memory</p></div>
-        <ul class="footer-list">
-          <li>Jouer</li>
-          <li>Les scores</li>
-          <li>Nous contacter</li>
-        </ul>
-      </div>
-
-
-    </div>
-
-
-  </footer>
-
+    <?php include '../../partials/footer.php'; ?>
 </body>
 </html>
