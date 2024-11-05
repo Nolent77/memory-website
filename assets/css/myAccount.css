@@ -68,3 +68,21 @@
     background-image: repeating-linear-gradient(45deg,  rgb(231, 175, 40), #fdcb58);
     text-decoration: none;
 }
+
+
+
+
+.backOfProfilPic{
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.backOfProfilPic img{
+
+    border-radius: 50%;
+}
