@@ -2,14 +2,15 @@
 <html class="no-js" lang="fr">
 
     <?php
-        $css_file = 'index.css';
-        include 'partials/head.php';
+    require_once 'utils/common.php';
+    include_once 'utils/userConnexion.php';
+    $css_file = 'index.css';
+    include 'partials/head.php';
+    $db = connectToDbAndGetPdo();
     ?>
 
 <body>
-    <?php include 'partials/header.php';
-     require_once 'utils/database.php';
-    $db=connectToDbAndGetPdo();?>
+    <?php include 'partials/header.php'; ?>
 
   <div class="Play">
   <section>
