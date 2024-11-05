@@ -69,7 +69,7 @@
           <div class="background"> <img src="assets/images/Cartes.jpg" width="150px" height="150px">
           <div class="statistique">
               <p>Parties jouées:</p><?php
-                    $req = $db->prepare("SELECT COUNT(score_game) AS nb_played FROM `score`");
+                    $req = $db->prepare("SELECT COUNT(score) AS nb_played FROM `score`");
                     $req->execute();
                     $data = $req->fetch();
                     echo $data['nb_played'];
@@ -79,7 +79,7 @@
           <div class="background"> <img src="assets/images/leaderboard.png" width="150px" height="150px">
             <div class="statistique">
                 <p>Record de score:</p><?php
-                $req = $db->prepare("SELECT score_game AS high_score FROM `score` ORDER BY score_game DESC LIMIT 1");
+                $req = $db->prepare("SELECT score AS high_score FROM `score` ORDER BY score DESC LIMIT 1");
                 $req->execute();
                 $data = $req->fetch();
                 echo $data['high_score'];
