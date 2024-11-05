@@ -7,8 +7,9 @@
     ?>
 
 <body>
-    <?php include 'partials/header.php'; ?>
-    <?php require_once 'utils/database.php'; ?>
+    <?php include 'partials/header.php';
+     require_once 'utils/database.php';
+    $db=connectToDbAndGetPdo();?>
 
   <div class="Play">
   <section>
@@ -67,7 +68,6 @@
           <div class="background"> <img src="assets/images/Cartes.jpg" width="150px" height="150px">
           <div class="statistique">
               <p>Parties jouées:</p><?php
-                    $db=connectToDbAndGetPdo();
                     $req = $db->prepare("SELECT COUNT(score_game) AS nb_played FROM `score`");
                     $req->execute();
                     $data = $req->fetch();
@@ -78,7 +78,6 @@
           <div class="background"> <img src="assets/images/leaderboard.png" width="150px" height="150px">
             <div class="statistique">
                 <p>Record de score:</p><?php
-                $db=connectToDbAndGetPdo();
                 $req = $db->prepare("SELECT score_game AS high_score FROM `score` ORDER BY score_game DESC LIMIT 1");
                 $req->execute();
                 $data = $req->fetch();
@@ -93,7 +92,6 @@
       <div class="background"> <img src="assets/images/user.jpg" width="150px" height="150px">
         <div class="statistique">
             <p>Joueurs aujourd'hui:</p><?php
-            $db=connectToDbAndGetPdo();
             $req = $db->prepare("SELECT COUNT(id) AS nb_recent_users FROM user WHERE last_login >= NOW() - INTERVAL 1 DAY");
             $req->execute();
             $data = $req->fetch();
@@ -104,7 +102,6 @@
         <div class="background"> <img src="assets/images/community.png" width="150px" height="150px">
           <div class="statistique">
             <p>Nombre de membres</p><?php
-              $db=connectToDbAndGetPdo();
               $req = $db->prepare("SELECT COUNT(id) AS nb_users FROM user");
               $req->execute();
               $data = $req->fetch();
