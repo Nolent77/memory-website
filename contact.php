@@ -7,23 +7,24 @@
     include_once 'utils/userConnexion.php';
 
 
-
-
-
-
-    // email
     $css_file = 'contact.css';
     require 'partials/head.php';
 
-    $to      = 'ryver.co@gmail.com';
-    $subject = 'le sujet';
-    $message = 'Bonjour !';
-    $headers = 'From: river.officiel@gmail.com' . "\r\n" .
-        'Reply-To: ryver.co@gmail.com' . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
+    function email() {
+        if(isset($_GET['submitForm'])) {
+            $to      = $_POST["email"];
+            $subject = $_POST['subject'];
+            $message = $_POST['message'];
+            $headers = 'From: river.officiel@gmail.com' . "\r\n" .
+                'Reply-To: river.officiel@gmail.com' . "\r\n" .
+                'X-Mailer: PHP/' . phpversion();
 
-    mail($to, $subject, $message, $headers);
+            mail($to, $subject, $message, $headers);
+        }
+    };
 
+
+    email();
     ?>
 
 
@@ -61,7 +62,7 @@
                 </div>
                 <input class="input" type="text" name="sujet" placeholder="Sujet" required>
                 <textarea class="input_message" name="message" placeholder="Message" required></textarea>
-                <button type="submit">Envoyer</button>
+                <button type="submit" name="submitForm">Envoyer</button>
             </form>
         </div>
 

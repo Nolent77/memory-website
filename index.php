@@ -3,7 +3,6 @@
 
     <?php
     require_once 'utils/common.php';
-    include_once 'utils/userConnexion.php';
     $css_file = 'index.css';
     include 'partials/head.php';
     $db = connectToDbAndGetPdo();

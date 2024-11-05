@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <?php
+    require_once __DIR__ . '/../../utils/common.php';
     $css_file = 'memory.css';
     include '../../partials/head.php';
 ?>

@@ -1,25 +1,22 @@
 <?php
-function connectToDbAndGetPdo() {
-    $host = 'localhost'; // Hôte de la base de données
-    $dbname = 'memory'; // Remplacez par le nom de votre base de données
-    $user = 'root'; // Nom d'utilisateur par défaut pour MAMP
-    $password = 'root'; // Mot de passe par défaut pour MAMP
+    function connectToDbAndGetPdo() {
+        $host = 'localhost';
+        $dbname = 'memory';
+        $user = 'root';
+        $password = 'root';
 
-    // DSN (Data Source Name)
-    $dsn = "mysql:host=$host;dbname=$dbname";
+        $dsn = "mysql:host=$host;dbname=$dbname";
 
-    try {
-        // Création de l'instance PDO avec les bonnes variables
-        $pdo = new PDO($dsn, $user, $password);
+        try {
+            $pdo = new PDO($dsn, $user, $password);
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        // Option de configuration pour activer les exceptions d'erreurs
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        return $pdo;
-    } catch (PDOException $e) {
-        echo 'Connexion échouée : ' . $e->getMessage();
-        exit;
+            return $pdo;
+        } catch (PDOException $e) {
+            echo 'Connexion échouée : ' . $e->getMessage();
+            exit;
+        }
     }
-}
-$bd = connectToDbAndGetPdo();
+    $bd = connectToDbAndGetPdo();
+
 ?>

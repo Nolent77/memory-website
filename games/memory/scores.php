@@ -2,6 +2,7 @@
 <html class="no-js" lang="fr">
 
 <?php
+    require_once __DIR__ . '/../../utils/common.php';
     $css_file = 'scores.css';
     include '../../partials/head.php';
 ?>

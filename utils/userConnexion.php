@@ -1,6 +1,6 @@
 <?php
 
-    require "utils/common.php";
+    require __DIR__. "/common.php";
 
     $bd = connectToDbAndGetPdo();
     global $bd;
