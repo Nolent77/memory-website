@@ -21,4 +21,5 @@ function connectToDbAndGetPdo() {
         exit;
     }
 }
+$bd = connectToDbAndGetPdo();
 ?>
