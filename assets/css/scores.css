@@ -2,8 +2,19 @@
 @import 'main.css';
 @import 'footer.css';
 
+form label .input_user {
+    border: 1px solid #272645;
+    background-color: #272645;
+    color: white;
+    font-weight: bold;
+    width: 20%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px 40%;
+}
+
 .Tab{
-    margin:10px;
+    margin-bottom:10px;
 }
 
 .Tab td, th {
@@ -36,7 +47,7 @@
 }
 
 .Tab .First{
-    background-color: red;
+    background-color: goldenrod;
     text-align: center;
     font-size: 20px;
 }
@@ -51,10 +62,8 @@
     text-align: center;
     font-size: 20px;
 }
-.Tab td{
-    text-decoration: underline;
-    font-weight: bold;
-    background-color: white;
+.Tab tr.active td{
+    background-color: #352980;
 }
 @media screen and (max-width: 767px) {
     .Tab td, th {
@@ -85,7 +94,7 @@
     }
 
     .Tab .First{
-        background-color: red;
+        background-color: goldenrod;
         text-align: center;
         font-size: 10px;
     }
