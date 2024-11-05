@@ -2,16 +2,17 @@
 <html lang="fr">
 
 <?php
-    session_start();
-    require 'utils/database.php';
 
-    $pdo = connectToDbAndGetPdo();
+    require_once 'utils/common.php';
+    include_once 'utils/userConnexion.php';
 
-    $_SESSION['username'] = 'UserOne';
-    $_SESSION['email'] = 'user1@example.com';
+
+
+
+
 
     // email
-$css_file = 'contact.css';
+    $css_file = 'contact.css';
     require 'partials/head.php';
 
     $to      = 'ryver.co@gmail.com';
@@ -24,32 +25,6 @@ $css_file = 'contact.css';
     mail($to, $subject, $message, $headers);
 
     ?>
-
-    <?php
-
-
-    try {
-        $pdo = connectToDbAndGetPdo();
-
-        // Remplacez 'user' par le nom de votre table si nécessaire
-        $tableName = 'user';
-
-        // Requête pour vérifier si la table existe
-        $query = $pdo->query("SHOW TABLES LIKE '$tableName'");
-        $exists = $query->rowCount() > 0;
-
-        if ($exists) {
-            echo "La table '$tableName' existe.";
-        } else {
-            echo "La table '$tableName' n'existe pas.";
-        }
-
-    } catch (PDOException $e) {
-        echo "Erreur : " . $e->getMessage();
-    }
-    ?>
-
-
 
 
 <body>
