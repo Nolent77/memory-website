@@ -37,11 +37,11 @@ if (isset($_POST['submitConnexion'])) {
     if($idValid != false){
         $req = $db->prepare('UPDATE `user` SET last_login = NOW() WHERE email = ?');
         $req->execute([$email]);
-        echo "Connexion réussie !";
+        //echo "Connexion réussie !";
         header("Location: ../index.php");
     }
     else{
-        echo"mot de passe ou email invalid";
+       // echo"mot de passe ou email invalid";
     }
 }
 ?>
