@@ -2288,7 +2288,7 @@ $db=connectToDbAndGetPdo();
               <label for="Message"><input type="text" placeholder="Écrivez un message..." class="chat-input" name="Message" id="Message"></label>
           </form>
           <?php
-            $search = (isset($_POST['Message']) AND $_POST['Message']!="") ? "'".$_POST['Message']."'" . header('Location: index.php?sendmessage') : '';
+            $search = (isset($_POST['Message']) AND $_POST['Message']!="") ? '"'.$_POST['Message'].'"' . header('Location: index.php?sendmessage') : '';
             ($search!='') ? $req = $db->prepare("INSERT INTO `message`(`game_id`,`sender_id`, `receiver_id`, `content`, `message_date`) VALUES (1," . $_SESSION['userId'] . ",2," . $search . ", NOW())") : null;
             $req->execute();
 

@@ -8,17 +8,30 @@
     $db = connectToDbAndGetPdo();
     ?>
 
+    <?php function stat_request($sql_request,$sql_name) {
+    $db = connectToDbAndGetPdo();
+    $req = $db->prepare($sql_request);
+    $req->execute();
+    $data = $req->fetch();
+    echo isset($data[$sql_name]) ? $data[$sql_name] : "";
+    };?>
+
+
+
 <body>
     <?php include 'partials/header.php'; ?>
 
   <div class="Play">
     <section>
+
         <div class="Bienvenue">
             <h2>BIENVENUE DANS NOTRE STUDIO !</h2>
         </div>
+
         <div class="play_button">
             <a href="games/memory/index.php">JOUER !</a>
         </div>
+
     </section>
   </div>
 
@@ -69,99 +82,103 @@
       <div class="stats_content">
 
         <div class="big_img">
-          <img src="assets/images/Stats.jpg" height="323" width="323" alt="Stats"/>
+          <img src="assets/images/Stats.jpg" height="323px" width="323px" alt="Stats"/>
         </div>
 
         <div class="stats-lr">
-        <div class="stats_left">
 
-          <div class="background"> <img src="assets/images/Cartes.jpg" width="150px" height="150px" alt="">
-          <div class="statistique">
-              <p>Parties jouées:</p><?php
-                    $req = $db->prepare("SELECT COUNT(score_game) AS nb_played FROM `score`");
-                    $req->execute();
-                    $data = $req->fetch();
-                    echo $data['nb_played'];
-                  ?>
-        </div></div>
+            <div class="stats_left">
 
-          <div class="background"> <img src="assets/images/leaderboard.png" width="150px" height="150px" alt="">
-            <div class="statistique">
-                <p>Record de score:</p><?php
-                $req = $db->prepare("SELECT score_game AS high_score FROM `score` ORDER BY score_game DESC LIMIT 1");
-                $req->execute();
-                $data = $req->fetch();
-                echo $data['high_score'];
-                ?>
-            </div></div>
+                <div class="background"> <img src="assets/images/Cartes.jpg" width="150px" height="150px" alt="">
+                <div class="statistique">
+                    <p>Parties jouées:</p>
+                    <?php $request="SELECT COUNT(score_game) AS nb_played 
+                                    FROM `score`";
+                    stat_request($request,"nb_played"); ?>
+                </div></div>
 
+                <div class="background"> <img src="assets/images/leaderboard.png" width="150px" height="150px" alt="">
+                <div class="statistique">
+                    <p>Record de score:</p>
+                    <?php $request="SELECT score_game AS high_score 
+                                    FROM `score` 
+                                    ORDER BY score_game DESC 
+                                    LIMIT 1";
+                    stat_request($request,"high_score"); ?>
+                </div></div>
+
+            </div>
+
+
+            <div class="stats_right">
+
+                <div class="background"> <img src="assets/images/user.jpg" width="150px" height="150px" alt="">
+                <div class="statistique">
+                    <p>Joueurs aujourd'hui:</p>
+                    <?php $request="SELECT COUNT(id) AS nb_recent_users 
+                                    FROM user 
+                                    WHERE last_login >= NOW() - INTERVAL 1 DAY";
+                    stat_request($request,"nb_recent_users"); ?>
+                </div></div>
+
+                <div class="background"> <img src="assets/images/community.png" width="150px" height="150px" alt="">
+                <div class="statistique">
+                    <p>Nombre de membres</p>
+                    <?php $request="SELECT COUNT(id) AS nb_users 
+                                    FROM user";
+                        stat_request($request,"nb_users"); ?>
+                </div></div>
+
+            </div>
         </div>
-
-      <div class="stats_right">
-
-      <div class="background"> <img src="assets/images/user.jpg" width="150px" height="150px" alt="">
-        <div class="statistique">
-            <p>Joueurs aujourd'hui:</p><?php
-            $req = $db->prepare("SELECT COUNT(id) AS nb_recent_users FROM user WHERE last_login >= NOW() - INTERVAL 1 DAY");
-            $req->execute();
-            $data = $req->fetch();
-            echo $data['nb_recent_users'];
-            ?>
-        </div></div>
-
-        <div class="background"> <img src="assets/images/community.png" width="150px" height="150px" alt="">
-          <div class="statistique">
-            <p>Nombre de membres</p><?php
-              $req = $db->prepare("SELECT COUNT(id) AS nb_users FROM user");
-              $req->execute();
-              $data = $req->fetch();
-              echo $data['nb_users'];
-              ?>
-          </div></div>
 
       </div>
-        </div>
-    </div>
     </div>
   </section>
 
+
   <section>
-    <div class="team_title">
-      <h3>NOTRE ÉQUIPE</h3>
-    </div>
 
-    <div class="team_content">
-
-      <div class="team_left">
-
-        <div class="members"> <img src="assets/images/badis.png" width="140px" height="140px">
-          <div class="name"><p>OUBAICHE Badis</p></div>
-          <div class="work"><p>Développeur HTML/CSS</p></div>
-          </div>
-
-        <div class="members"> <img src="assets/images/liam.png" width="140px" height="140px">
-          <div class="name"><p>DEPARFOURU Liam</p></div>
-          <div class="work"><p>Développeur HTML/CSS</p></div>
-          </div>
+      <div class="team_title">
+        <h3>NOTRE ÉQUIPE</h3>
       </div>
-        <div class="team_right">
 
-        <div class="members"> <img src="assets/images/nolhan.png" width="140px" height="140px">
-          <div class="name"><p>OPPIO Nolhan</p></div>
-          <div class="work"><p>Scrum Master</p><p>Développeur HTML/CSS</p></div>
-          </div>
+      <div class="team_content">
 
-        <div class="members"> <img src="assets/images/shayan.png" width="140px" height="140px">
-          <div class="name"><p>CAHELO Shayan</p></div>
-          <div class="work"><p>Développeur HTML/CSS</p></div>
-          </div>
+        <div class="team_left">
+
+            <div class="members"> <img src="assets/images/badis.png" width="140px" height="140px" alt="Badis">
+                <div class="name"><p>OUBAICHE Badis</p></div>
+                <div class="work"><p>Développeur HTML/CSS</p></div>
+            </div>
+
+            <div class="members">
+                <img src="assets/images/liam.png" width="140px" height="140px" alt="Liam">
+                <div class="name"><p>DEPARFOURU Liam</p></div>
+                <div class="work"><p>Développeur HTML/CSS</p></div>
+            </div>
+
         </div>
 
-    </div>
+
+        <div class="team_right">
+
+            <div class="members"> <img src="assets/images/nolhan.png" width="140px" height="140px" alt="Nolhan">
+                <div class="name"><p>OPPIO Nolhan</p></div>
+                <div class="work"><p>Scrum Master</p><p>Développeur HTML/CSS</p></div>
+            </div>
+
+            <div class="members"> <img src="assets/images/shayan.png" width="140px" height="140px" alt="Shayan">
+                <div class="name"><p>CAHELO Shayan</p></div>
+                <div class="work"><p>Développeur HTML/CSS</p></div>
+            </div>
+
+        </div>
+
+      </div>
   </section>
 
     <?php include 'partials/footer.php'; ?>
-
 </body>
 
 </html>

@@ -35,11 +35,15 @@
   font-weight: bold;
 
 }
-
 .Play .play_button:hover{
   transform: scale(1.1);
   background-color: darkorange;
 }
+
+
+
+
+
 .Rules{
   text-align: center;
 }
