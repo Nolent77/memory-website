@@ -5,11 +5,7 @@
     $css_file = 'myAccount.css';
     include 'partials/head.php';
 
-    function isConnect() {
-        if ($_SESSION['userId'] == 7 ) {
-            header("Location: index.php");
-        }
-    }
+
     isConnect();
 ?>
 
