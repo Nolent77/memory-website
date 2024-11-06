@@ -5,7 +5,9 @@
     require_once __DIR__ . '/../../utils/common.php';
     $css_file = 'memory.css';
     include '../../partials/head.php';
-?>
+$db=connectToDbAndGetPdo();
+    ?>
+
 
 <body>
     <?php include '../../partials/header.php'; ?>
@@ -2244,15 +2246,27 @@
 
 
     <div class="body">
-      <a href="#chat" class="button">ChatBox</a>
 
+      <a href="#chat" class="button">ChatBox</a>
+        <?php
+        $req = $db->prepare("SELECT sender.username AS sender, receiver.username AS receiver, `content`,message_date FROM `message` INNER JOIN `user` sender on sender.id = message.sender_id INNER JOIN `user` receiver on receiver.id = message.receiver_id WHERE message_date >= NOW() - INTERVAL 1 DAY  ORDER BY message_date ASC");
+        $req->execute();
+        $content_tab= array();
+        $sender_tab= array();
+        $receiver_tab= array();
+        while ($data = $req->fetch()) {
+            $content_tab[] = htmlspecialchars($data['content']);
+            $receiver_tab[] = htmlspecialchars($data['receiver']);
+            $sender_tab[] = htmlspecialchars($data['sender']);
+        }
+        ?>
       <div id="chat" class="chat-box">
         <div class="chat-header">
           <span>Chat</span>
           <a href="#" class="close-button">x</a>
         </div>
         <div class="message-answer">
-          Bonjour, puis-je vous aider ?
+            <?php echo "Gros caca"; ?>
         </div>
 
         <div class="chat-messages">
@@ -2260,6 +2274,7 @@
         </div>
         <input type="text" placeholder="Écrivez un message..." class="chat-input">
       </div>
+
     </div>
 
 
