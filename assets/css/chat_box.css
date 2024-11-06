@@ -26,11 +26,14 @@
 }
 
 .chat-box {
+    overflow-y: scroll ;
+    overflow-x: hidden;
     display: none;
     position: fixed;
     bottom: 200px;
     right: 50px;
     width: 400px;
+    height: 500px;
     border: 2px solid #cccccc;
     border-radius: 5px;
     background-color: #523274;
@@ -76,9 +79,16 @@
     border-radius: 5px;
     background-color:  #403267;
     border-radius : 50px 50PX  20px 1px;
-    width: 100px;
+    width: 335px;
 }
-
+.chat-box div.message-sent{
+    margin: 20px 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color:  cornflowerblue;
+    border-radius : 50px 50PX  1px 20px;
+    width: 335px;
+}
 .message {
     margin: 5px 0;
     padding: 15px;
@@ -92,4 +102,3 @@
 #chat:target {
     display: block;
 }
-

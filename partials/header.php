@@ -23,7 +23,7 @@
                 <a href="/games/memory/scores.php"><div>Scores</div></a>
             </li>
             <li class="has_sous_nav <?php echo ($current_path == '/myAccount.php' || $current_path == '/login.php' || $current_path == '/register.php') ? 'active' : ''; ?>">
-                <a href="#"><div><?= getUsername($bd, 1) ?></div></a>
+                <a href="#"><div><?= getUsername($bd) ?></div></a>
                 <ul class="under_menu">
                     <li><a href="/myAccount.php"><div>Mon espace</div></a></li>
                     <li><a href="/login.php"><div>Connexion</div></a></li>

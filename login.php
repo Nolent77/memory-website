@@ -23,6 +23,10 @@ include 'partials/head.php';
             <input name = 'password_login' placeholder="Mot de passe">
             <button name = 'submitConnexion' class ="registerBtn" type="submit"> Connexion </button>
         </form>
+        <div class="<?php echo (!empty($_SESSION['error']) && $_SESSION['error'] == true) ? 'active' : 'inactif'; ?>">
+            <p>Test</p>
+        </div>
+
     </div>
 
 

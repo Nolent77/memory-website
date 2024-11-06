@@ -4,6 +4,8 @@
 
     $db = connectToDbAndGetPdo();
     global $db;
+    $_SESSION['error'] = false;
+
 
     function getUsername($bd) {
         $req = $bd->prepare("SELECT username FROM `user` WHERE id = ?");
@@ -37,11 +39,11 @@ if (isset($_POST['submitConnexion'])) {
     if($idValid != false){
         $req = $db->prepare('UPDATE `user` SET last_login = NOW() WHERE email = ?');
         $req->execute([$email]);
-        //echo "Connexion réussie !";
         header("Location: ../index.php");
     }
     else{
-       // echo"mot de passe ou email invalid";
+        $_SESSION['error'] = true;
+        header("Location: ../login.php");
     }
 }
 ?>
