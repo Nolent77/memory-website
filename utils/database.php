@@ -1,6 +1,6 @@
 <?php
     function connectToDbAndGetPdo() {
-        $host = 'localhost';
+        $host = 'localhost:8889';
         $dbname = 'memory';
         $user = 'root';
         $password = 'root';
@@ -17,6 +17,6 @@
             exit;
         }
     }
-    $bd = connectToDbAndGetPdo();
+    $db = connectToDbAndGetPdo();
 
 ?>
