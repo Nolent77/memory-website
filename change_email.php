@@ -2,8 +2,42 @@
 <html class="no-js" lang="fr">
 
 <?php
+    require_once 'utils/common.php';
     $css_file = 'change_email.css';
     include 'partials/head.php';
+    $db = connectToDbAndGetPdo();
+    global $db;
+
+    function formChangeEmail($db) {
+        $id = $_SESSION["userId"];
+
+        if(isset($_POST['submitForm'])) {
+            $email = $_POST["email"];
+            $new_email = $_POST['new_email'];
+            $password = $_POST['password'];
+            if (!emailVerif($email)) {
+                if (emailVerif($new_email)) {
+                    if (checkPasswordUser($password, $db)){
+                        $req = $db->prepare('UPDATE `user` SET email = ? WHERE id = ?');
+                        $req->execute(array($new_email, $id));
+                        header('Location: myAccount.php');
+                        exit();
+                    }
+                    else {
+                        echo "Mot de passe invalide";
+                    }
+                }
+                else {
+                    echo "nouvel email incorrecte";
+                }
+            }
+            else {
+                echo "Ancien email invalide";
+            }
+        }
+    }
+    formChangeEmail($db);
+
 ?>
 
 <body>
@@ -16,13 +50,15 @@
 
 
 <main class="register">
+    <form method="POST" action="">
+        <div class="registerBox">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="email" name="new_email" placeholder="Nouvel Email" required>
+            <input type="password" name="password" placeholder="Mot De Passe" required>
+            <button type="submit" name="submitForm" class="registerBtn">Accepter</button>
+        </div>
+    </form>
 
-  <div class="registerBox">
-    <input placeholder="Email">
-    <input placeholder="Nouvel Email">
-    <input placeholder="Mot De Passe">
-    <button class ="registerBtn"> Accepter </button>
-  </div>
 
 
 </main>

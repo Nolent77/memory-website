@@ -53,4 +53,16 @@
         return false;
     }
 
+    function checkPasswordUser($password, $db) {
+        $id = $_SESSION['userId'];
+        $req = $db->prepare('SELECT password FROM `user` WHERE id = ?');
+        $req->execute(array($id));
+        $result = $req->fetch();
+
+        if ($result && password_verify($password, $result['password'])) {
+            return true;
+        }
+        return false;
+    }
+
 ?>

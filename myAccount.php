@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <?php
+    require_once 'utils/common.php';
     $css_file = 'myAccount.css';
     include 'partials/head.php';
 
