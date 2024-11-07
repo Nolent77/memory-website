@@ -37,3 +37,9 @@ footer ul li::marker {
     align-items: center;
     padding: 25px;
 }
+
+.footer-list a {
+    text-decoration: none;
+    color: white;
+
+}
