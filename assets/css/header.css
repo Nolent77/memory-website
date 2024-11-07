@@ -94,7 +94,7 @@ details > summary::-webkit-details-marker {
     }
 }
 
-.menu_right li.active a div {
+.menu_right li.isPage a div {
     color: #3498db;
 }
 
