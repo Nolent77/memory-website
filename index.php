@@ -7,14 +7,10 @@
     include 'partials/head.php';
     $db = connectToDbAndGetPdo();
 
-    if ($_SESSION['succesMessageRegister']) {
-
-
-
-    }
-    function test () {
-        $_SESSION['succesMessageRegister'] = false;
-    }
+    if (isset($_SESSION['message'])) {
+    echo '<p style="color: green;">' . $_SESSION['message'] . '</p>';
+    unset($_SESSION['message']);
+}
 
 ?>
 
