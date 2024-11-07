@@ -35,6 +35,11 @@
 
 ?>
 
+<div class="header_image_container">
+    <img src="assets/images/header.png" alt="paysage" class="header_image">
+    <div class="overlay-text">Mon Espace</div>
+</div>
+
 <form action="myAccount.php" method="post" enctype="multipart/form-data">
     Select image to upload:
     <input type="file" name="fileToUpload" id="fileToUpload">
@@ -42,10 +47,7 @@
 </form>
 
 
-<div class="header_image_container">
-    <img src="assets/images/header.png" alt="paysage" class="header_image">
-    <div class="overlay-text">Mon Espace</div>
-</div>
+
 
 <main>
     <div class="userAccount">
