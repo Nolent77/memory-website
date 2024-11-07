@@ -15,6 +15,17 @@
         return $data ? htmlspecialchars($data["username"]) : "Utilisateur";
     }
 
+    function isConnect() {
+        if ($_SESSION['userId'] == 0 ) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+
+
 
 
 function identifiantVerif($email, $password, $db) {

@@ -35,11 +35,15 @@
   font-weight: bold;
 
 }
-
 .Play .play_button:hover{
   transform: scale(1.1);
   background-color: darkorange;
 }
+
+
+
+
+
 .Rules{
   text-align: center;
 }
@@ -117,7 +121,7 @@
   text-align: center;
   border-radius: 10px;
 }
-.Stats .stats_content .grosse_img img{
+.Stats .stats_content .big_img img{
   border-radius: 10px;
   margin: 7px;
   border: 3px solid darkslateblue;
@@ -220,7 +224,7 @@
   .Stats .stats_content {
     flex-direction: column;
   }
-  .Stats .stats_content .grosse_img{
+  .Stats .stats_content .big_img{
     text-align: center;
   }
   .name{

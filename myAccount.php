@@ -2,25 +2,31 @@
 <html lang="fr">
 
 <?php
-$css_file = 'myAccount.css';
-include 'partials/head.php';
+    $css_file = 'myAccount.css';
+    include 'partials/head.php';
+
+
+    if (!isConnect()) {
+        header("Location: index.php");
+    }
 ?>
 
 <body>
-<?php include 'partials/header.php'; ?>
 <?php
-$userId = 1;
-$target_dir = "userfiles/";
-$target_file = $target_dir . $userId . '.jpg';
-$uploadOk = 1;
-if(isset($_POST["submit"])) {
-    if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)) {
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
+    include 'partials/header.php';
+
+    $userId = 1;
+    $target_dir = "userfiles/";
+    $target_file = $target_dir . $userId . '.jpg';
+    $uploadOk = 1;
+    if(isset($_POST["submit"])) {
+        if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)) {
+            $uploadOk = 1;
+        } else {
+            echo "File is not an image.";
+            $uploadOk = 0;
+        }
     }
-}
 
 ?>
 

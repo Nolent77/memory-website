@@ -4,17 +4,21 @@
     $db = connectToDbAndGetPdo();
     global $db;
 
-function emailVerif($email) {
-    global $db;
-    $req = $db->prepare('SELECT email FROM `user` WHERE email = ?');
-    $req->execute([$email]);
+    function emailVerif($email) {
+        global $db;
+        $req = $db->prepare('SELECT email FROM `user` WHERE email = ?');
+        $req->execute([$email]);
 
-    if ($req->fetch() != null) {
-//         echo "l'adresse mail est déjà utilisé";
-        return false;
+        if ($req->fetch() != null) {
+    //         echo "l'adresse mail est déjà utilisé";
+            return false;
+        }
+        return true;
     }
-    return true;
-}
+
+    function deconnect() {
+        $_SESSION['userId'] = 0;
+    }
 
 
 function pseudoVerif($pseudo) {

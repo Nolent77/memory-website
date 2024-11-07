@@ -6,10 +6,9 @@
 
     if (session_status() === PHP_SESSION_NONE) {
         session_start();
+        if ($_SESSION['userId'] == null) {
+            $_SESSION['userId'] = 0;
+        }
+
 }
-
-
-
-
-
 ?>

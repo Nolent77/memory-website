@@ -95,14 +95,13 @@ details > summary::-webkit-details-marker {
 }
 
 .menu_right li.active a div {
-    color: #3498db;  /* Ajustez cette couleur pour correspondre à votre style */
+    color: #3498db;
 }
 
-.inactif {
+.connectOff {
     display: none;
 }
-.active {
+.connectOn {
     display: block;
-    color : red;
 }
 
