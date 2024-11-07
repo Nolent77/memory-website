@@ -195,6 +195,18 @@
   width: 210px;
 }
 
+.succesRegisterOn {
+  color : green;
+  display: block;
+}
+
+.inactif {
+  display: none;
+}
+
+
+
+
 @media screen and (max-width: 767px){
   .Rules .Rules_ps{
     flex-direction: column;

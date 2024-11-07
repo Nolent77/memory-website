@@ -1,12 +1,22 @@
 <!doctype html>
 <html class="no-js" lang="fr">
 
-    <?php
+<?php
     require_once 'utils/common.php';
     $css_file = 'index.css';
     include 'partials/head.php';
     $db = connectToDbAndGetPdo();
-    ?>
+
+    if ($_SESSION['succesMessageRegister']) {
+
+
+
+    }
+    function test () {
+        $_SESSION['succesMessageRegister'] = false;
+    }
+
+?>
 
     <?php function stat_request($sql_request,$sql_name) {
     $db = connectToDbAndGetPdo();
@@ -34,6 +44,10 @@
 
     </section>
   </div>
+
+    <div class="<?php echo ($_SESSION['succesMessageRegister']) ? 'succesRegisterOn' : 'inactif'; ?>">
+        <p>Inscription réussie</p>
+    </div>
 
 
   <section>
@@ -92,8 +106,7 @@
                 <div class="background"> <img src="assets/images/Cartes.jpg" width="150px" height="150px" alt="">
                 <div class="statistique">
                     <p>Parties jouées:</p>
-                    <?php $request="SELECT COUNT(score_game) AS nb_played 
-                                    FROM `score`";
+                    <?php $request="SELECT COUNT(score_game) AS nb_played FROM `score`";
                     stat_request($request,"nb_played"); ?>
                 </div></div>
 

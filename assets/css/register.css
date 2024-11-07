@@ -77,15 +77,17 @@ input{
     input{
         width: 110%;
         flex-direction: column;
-
-
     }
+}
 
 
-
-
-    }
-
+.active {
+    display: block;
+    color : red;
+}
+.inactif {
+    display: none;
+}
 
 
 
