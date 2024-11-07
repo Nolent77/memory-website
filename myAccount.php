@@ -5,6 +5,8 @@
     require_once 'utils/common.php';
     $css_file = 'myAccount.css';
     include 'partials/head.php';
+    $bd = connectToDbAndGetPdo();
+    global $bd;
 
     if (isset($_SESSION['message'])) {
         echo '<p style="color: green;">' . $_SESSION['message'] . '</p>';
@@ -56,8 +58,7 @@
                 <img src="<?php echo $target_dir .  $userId . '.jpg' ?>"
             </div>
             <div class ="backOfInfoPlayer">
-                <p>Nom du Joueur</p>
-                <p>Pseudo</p>
+                <p><?= getUsername($bd) ?></p>
             </div>
         </div>
         <div class="actionBtn">
