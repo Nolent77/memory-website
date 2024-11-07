@@ -31,10 +31,10 @@
             <li class="has_sous_nav <?php echo ($current_path == '/myAccount.php' || $current_path == '/login.php' || $current_path == '/register.php') ? 'active' : ''; ?>">
                 <a href="#"><div><?= getUsername($bd) ?></div></a>
                 <ul class="under_menu">
-                    <li class="<?php echo ($current_path == '/games/memory/scores.php') ? 'active' : ''; ?>"><a href="/myAccount.php"><div>Mon espace</div></a></li>
-                    <li><a href="/login.php"><div>Connexion</div></a></li>
-                    <li><a href="/register.php"><div>Inscription</div></a></li>
-                    <li><a href="/index.php?action=deconnect"><div>Déconnexion</div></a></li>
+                    <li class="<?= isConnect() ? 'connectOn' : 'connectOff' ?>"><a href="/myAccount.php"><div>Mon espace</div></a></li>
+                    <li class="<?= isConnect() ? 'connectOff' : 'connectOn' ?>"><a href="/login.php"><div>Connexion</div></a></li>
+                    <li class="<?= isConnect() ? 'connectOff' : 'connectOn' ?>"><a href="/register.php"><div>Inscription</div></a></li>
+                    <li class="<?= isConnect() ? 'connectOn' : 'connectOff' ?>"><a href="/index.php?action=deconnect"><div>Déconnexion</div></a></li>
                 </ul>
             </li>
             <li class="<?php echo ($current_path == '/contact.php') ? 'active' : ''; ?>">
