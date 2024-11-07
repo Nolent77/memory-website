@@ -7,9 +7,24 @@
     include '../../partials/head.php';
     $db=connectToDbAndGetPdo();
 ?>
-<?php function () {
+<?php function echo_tab($id_tab,$score_tab,$game_tab,$name_tab,$diff_tab,$p) {
+    if ($p==0){$class='First';}
+    elseif ($p==1){$class='Second';}
+    elseif ($p==2){$class='Third';}
+    else {$class='below_three';}
+    ?>
 
-}?>
+    <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">
+        <th class=<?php echo $class ?>>1</th>
+        <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>
+        <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>
+        <td></td>
+        <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>
+        <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>
+        <td></td>
+    </tr>
+
+<?php } ?>
 <body>
     <?php include '../../partials/header.php'; ?>
 
@@ -41,17 +56,11 @@
         }?>
 
     <div class="Tab"><table>
-        <tr class="Columns">                                                                                                <th class="Classement">CLASSEMENT</th>  <th>JEU</th>                                                        <th>SCORE</th>                                                      <th>NOM</th>    <th>PSEUDO</th>                                                     <th>DIFFICULTÉ</th>                                                 <th>DATE ET HEURE</th>  </tr>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="First">1</th>                <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr> <?php $p++ ?>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="Second">2</th>               <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr> <?php $p++ ?>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="Third">3</th>                <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr> <?php $p++ ?>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="below_three">4</th>          <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr> <?php $p++ ?>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="below_three">5</th>          <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr> <?php $p++ ?>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="below_three">6</th>          <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr> <?php $p++ ?>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="below_three">7</th>          <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr> <?php $p++ ?>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="below_three">8</th>          <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr> <?php $p++ ?>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="below_three">9</th>          <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr> <?php $p++ ?>
-        <tr class="<?php echo ($id_tab[$p] == $_SESSION['userId'] && $_SESSION['userId']!=Null) ? 'tab_active' : ''; ?>">   <th class="below_three">10</th>         <td><?php echo isset($game_tab[$p]) ? $game_tab[$p] :"" ?></td>     <td><?php echo isset($score_tab[$p]) ? $score_tab[$p] :"" ?></td>   <td></td>       <td><?php echo isset($name_tab[$p]) ? $name_tab[$p] :"" ?></td>     <td><?php echo isset($diff_tab[$p]) ? $diff_tab[$p] :"" ?></td>     <td></td>               </tr>
+        <tr class="Columns"> <th class="Classement">CLASSEMENT</th> <th>JEU</th> <th>SCORE</th> <th>NOM</th> <th>PSEUDO</th> <th>DIFFICULTÉ</th> <th>DATE ET HEURE</th> </tr>
+            <?php foreach($id_tab AS $line) :
+                echo_tab($id_tab,$score_tab,$game_tab,$name_tab,$diff_tab,$p++);
+            endforeach;?>
+
     </table></div>
 
     <?php include '../../partials/footer.php'; ?>
