@@ -46,7 +46,7 @@
   </div>
 
     <div class="<?php echo ($_SESSION['succesMessageRegister']) ? 'succesRegisterOn' : 'inactif'; ?>">
-        <p>Inscription réussie</p>
+        <p>Inscription réussie !</p>
     </div>
 
 

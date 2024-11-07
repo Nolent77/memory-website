@@ -198,6 +198,10 @@
 .succesRegisterOn {
   color : green;
   display: block;
+  font-family: Arial;
+  font-size : 2.5rem;
+  display : flex;
+  justify-content: center;
 }
 
 .inactif {
