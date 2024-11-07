@@ -6,7 +6,9 @@
     include 'partials/head.php';
 
 
-    isConnect();
+    if (!isConnect()) {
+        header("Location: index.php");
+    }
 ?>
 
 <body>

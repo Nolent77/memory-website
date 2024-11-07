@@ -17,9 +17,14 @@
 
     function isConnect() {
         if ($_SESSION['userId'] == 0 ) {
-            header("Location: index.php");
+            return false;
+        }
+        else {
+            return true;
         }
     }
+
+
 
 
 
