@@ -136,3 +136,9 @@
     font-weight: bold;
 }
 
+.error_msg {
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
