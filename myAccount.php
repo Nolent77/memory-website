@@ -6,6 +6,10 @@
     $css_file = 'myAccount.css';
     include 'partials/head.php';
 
+    if (isset($_SESSION['message'])) {
+        echo '<p style="color: green;">' . $_SESSION['message'] . '</p>';
+        unset($_SESSION['message']);
+    }
 
     if (!isConnect()) {
         header("Location: index.php");

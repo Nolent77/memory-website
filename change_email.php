@@ -8,6 +8,15 @@
     $db = connectToDbAndGetPdo();
     global $db;
 
+    if (!isConnect()) {
+    header("Location: index.php");
+}
+
+    if (isset($_SESSION['message'])) {
+    echo '<p style="color: red;">' . $_SESSION['message'] . '</p>';
+    unset($_SESSION['message']);
+}
+
     function formChangeEmail($db) {
         $id = $_SESSION["userId"];
 
@@ -20,19 +29,23 @@
                     if (checkPasswordUser($password, $db)){
                         $req = $db->prepare('UPDATE `user` SET email = ? WHERE id = ?');
                         $req->execute(array($new_email, $id));
+                        $_SESSION['message'] = "Changement de l'adresse email réussi";
                         header('Location: myAccount.php');
                         exit();
                     }
                     else {
-                        echo "Mot de passe invalide";
+                        $_SESSION['message'] = 'Mot de passe incorrect';
+                        header('Location: change_email.php');
                     }
                 }
                 else {
-                    echo "nouvel email incorrecte";
+                    $_SESSION['message'] = 'Nouvel email incorrect';
+                    header('Location: change_email.php');
                 }
             }
             else {
-                echo "Ancien email invalide";
+                $_SESSION['message'] = 'Ancien email invalide';
+                header('Location: change_email.php');
             }
         }
     }
