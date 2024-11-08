@@ -36,6 +36,7 @@
                 $lastInsertId = $db->lastInsertId();
                 $_SESSION['userId'] = $lastInsertId;
                 $_SESSION['succesMessageRegister'] = true;
+                $_SESSION['message'] = "Inscription réussi";
                 header("Location: ../index.php");
             }
             else {
